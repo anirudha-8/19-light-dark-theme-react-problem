@@ -8,7 +8,7 @@ export const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
 	// useState for theme
 	const [theme, setTheme] = useState(() => {
-		return localStorage.getItem(theme) || "light";
+		return localStorage.getItem("theme") || "light";
 	});
 
 	useEffect(() => {
@@ -16,7 +16,8 @@ export const ThemeProvider = ({ children }) => {
 	}, [theme]);
 
 	// function to toggle the theme
-	const toggleTheme = () => setTheme((preTheme) => !preTheme);
+	const toggleTheme = () =>
+		setTheme((preTheme) => (preTheme === "light" ? "dark" : "light"));
 
 	return (
 		<ThemeContext.Provider value={{ theme, toggleTheme }}>
