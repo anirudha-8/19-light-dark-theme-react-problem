@@ -13,7 +13,7 @@ export const ThemeProvider = ({ children }) => {
 	const toggleTheme = () => setTheme((preTheme) => !preTheme);
 
 	return (
-		<ThemeContext.Provider value={(theme, toggleTheme)}>
+		<ThemeContext.Provider value={{ theme, toggleTheme }}>
 			{children}
 		</ThemeContext.Provider>
 	);
