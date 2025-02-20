@@ -33,13 +33,13 @@ Create a **React application** with the following features:
 1. **Clone the Submodule Repository:**  
 
     ```bash
-        git clone https://github.com/anirudha-8/19-theme-switcher-context.git
+        git clone https://github.com/anirudha-8/19-light-dark-theme-react-problem.git
     ```
 
 2. Navigate to the Project Directory:  
 
     ```bash
-        cd 19-theme-switcher-context
+        cd 19-light-dark-theme-react-problem.git
     ```
 
 3. Install Dependencies:  
